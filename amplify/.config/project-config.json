@@ -1,0 +1,17 @@
+{
+  "projectName": "rotoballo",
+  "version": "3.0",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "vue",
+    "config": {
+      "SourceDir": ".",
+      "DistributionDir": "dist",
+      "BuildCommand": "npm run-script generate",
+      "StartCommand": "npm run-script start"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}
