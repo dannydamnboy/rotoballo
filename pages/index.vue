@@ -8,7 +8,6 @@
       <div>
         <nuxt-link to="/about">About</nuxt-link>
       </div>
-      
     </div>
   </div>
 </template>
