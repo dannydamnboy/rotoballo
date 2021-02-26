@@ -4,13 +4,25 @@
       <h1 class="title">
         So bbell'guagliò
       </h1>
-      <img src="IMG_20210208_085727.jpg" alt="">
+      <p>{{ document.data.my_text_field[0].text }}</p>
+      <img src="~/assets/IMG_20210208_085727.jpg" alt="">
     </div>
   </div>
 </template>
 
+
 <script>
-export default {};
+export default {
+  async asyncData({ $prismic, params, error }) {
+    const document = await $prismic.api.getByUID("my_nuxt_page", "test_uid");
+
+    if (document) {
+      return { document };
+    } else {
+      error({ statusCode: 404, message: "Page not found" });
+    }
+  },
+};
 </script>
 
 <style>

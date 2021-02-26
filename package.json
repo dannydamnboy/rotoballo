@@ -11,8 +11,18 @@
   "dependencies": {
     "@aws-amplify/ui-vue": "^1.0.2",
     "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/prismic": "^1.2.4",
     "aws-amplify": "^3.3.20",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
-  }
+    "nuxt": "^2.14.12",
+    "nuxt-sm": "^0.0.6",
+    "vue-slicezone": "^0.0.29"
+  },
+  "devDependencies": {
+    "@nuxtjs/storybook": "^3.3.1",
+    "slice-machine-ui": "^0.0.44"
+  },
+  "slicemachine": "start-slicemachine --port 9999",
+"storybook": "nuxt storybook",
+"build-storybook": "nuxt storybook build"
 }

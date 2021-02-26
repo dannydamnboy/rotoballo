@@ -4,7 +4,8 @@
       <h1 class="title">
         Rotoballinis
       </h1>
-      <img src="rotoballo.jpg" alt="">
+      <img src="~/assets/rotoballo.jpg" alt="">
+      <p>{{ document.data.my_text_field[0].text }}</p>
       <div>
         <nuxt-link to="/about">About</nuxt-link>
       </div>
@@ -14,7 +15,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  async asyncData({ $prismic, params, error }) {
+    const document = await $prismic.api.getByUID("my_nuxt_page", "test_uid");
+    if (document) {
+      return { document };
+    } else {
+      error({ statusCode: 404, message: "Page not found" });
+    }
+  },
+};
 </script>
 
 <style>
