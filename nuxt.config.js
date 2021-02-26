@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -61,8 +61,29 @@ export default {
   build: {
     transpile: ["vue-slicezone", "nuxt-sm"]
   },
+
   storybook: {
     stories: ["~/slices/**/*.stories.js"]
   },
-  ignore: ["**/*.stories.js"]
+
+  ignore: ["**/*.stories.js"],
+
+  generate: {
+
+    concurrency: 2,
+
+    routes: function (callback) {
+
+      let staticRoutes = [
+        '/',
+        '/about'
+      ];
+
+      for (let index = 0; index < 1000; index++) {
+        staticRoutes.push('/product/' + index);
+      }
+
+      callback(null, staticRoutes);
+    }
+  }
 }
