@@ -4,7 +4,7 @@
       <h1 class="title">
         Rotoballinis
       </h1>
-      <img src="rotoballo.jpg" alt="">
+      <img src="~/assets/rotoballo.jpg" alt="">
       <p>{{ document.data.my_text_field[0].text }}</p>
       <div>
         <nuxt-link to="/about">About</nuxt-link>

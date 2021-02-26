@@ -5,7 +5,7 @@
         So bbell'guagliò
       </h1>
       <p>{{ document.data.my_text_field[0].text }}</p>
-      <img src="IMG_20210208_085727.jpg" alt="">
+      <img src="~/assets/IMG_20210208_085727.jpg" alt="">
     </div>
   </div>
 </template>
