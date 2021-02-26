@@ -1,0 +1,6 @@
+{
+  "apiEndpoint": "https://prumotti.cdn.prismic.io/api/v2",
+  "libraries": ["@/slices"],
+  "_latest": "0.0.43",
+  "storybook": "http://localhost:3003"
+}
