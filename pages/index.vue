@@ -2,12 +2,13 @@
   <div class="container">
     <div>
       <h1 class="title">
-        Rotoballo
+        Rotoballinis
       </h1>
       <img src="rotoballo.jpg" alt="">
       <div>
         <nuxt-link to="/about">About</nuxt-link>
       </div>
+
     </div>
   </div>
 </template>
