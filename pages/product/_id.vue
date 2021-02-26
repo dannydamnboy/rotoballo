@@ -3,13 +3,22 @@
     <div>
       <h1 class="title">
         Product {{ $route.params.id }}
-      </h1>
+      </h1><p>{{ document.data.my_text_field[0].text }}</p>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  async asyncData({ $prismic, params, error }) {
+    const document = await $prismic.api.getByUID("my_nuxt_page", "test_uid");
+    if (document) {
+      return { document };
+    } else {
+      error({ statusCode: 404, message: "Page not found" });
+    }
+  },
+};
 </script>
 
 <style>

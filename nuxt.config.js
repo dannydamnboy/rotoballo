@@ -70,8 +70,6 @@ export default {
 
   generate: {
 
-    concurrency: 2,
-
     routes: function (callback) {
 
       let staticRoutes = [
