@@ -2,13 +2,9 @@
   <div class="container">
     <div>
       <h1 class="title">
-        Rotoballo
+        So bbell'guagliò
       </h1>
-      <img src="rotoballo.jpg" alt="">
-      <div>
-        <nuxt-link to="/about">About</nuxt-link>
-      </div>
-      
+      <img src="IMG_20210208_085727.jpg" alt="">
     </div>
   </div>
 </template>
