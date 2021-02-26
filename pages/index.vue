@@ -18,9 +18,6 @@
 export default {
   async asyncData({ $prismic, params, error }) {
     const document = await $prismic.api.getByUID("my_nuxt_page", "test_uid");
-
-    console.log(",", { document });
-
     if (document) {
       return { document };
     } else {
