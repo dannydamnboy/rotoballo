@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
-        Rotoballinis
+        Roto
       </h1>
       <img src="~/assets/rotoballo.jpg" alt="">
       <p>{{ document.data.my_text_field[0].text }}</p>
