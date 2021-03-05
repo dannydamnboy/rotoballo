@@ -7,9 +7,11 @@
       <p>{{ document.data.my_text_field[0].text }}</p>
       <img src="~/assets/IMG_20210208_085727.jpg" alt="">
     </div>
+    <h1 class="title">
+      Arturito
+    </h1>
   </div>
 </template>
-
 
 <script>
 export default {
