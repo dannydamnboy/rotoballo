@@ -8,7 +8,7 @@
       <img src="~/assets/IMG_20210208_085727.jpg" alt="">
     </div>
     <h1 class="title">
-      Arturito
+      Pallino
     </h1>
   </div>
 </template>
