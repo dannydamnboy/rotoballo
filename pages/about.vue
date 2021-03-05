@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
-        non so proprio So bbell'guagliò
+        Arturo
       </h1>
       <p>{{ document.data.my_text_field[0].text }}</p>
       <img src="~/assets/IMG_20210208_085727.jpg" alt="">
@@ -56,6 +56,7 @@ img {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+  color:red;
 }
 
 .links {
