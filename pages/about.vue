@@ -2,13 +2,13 @@
   <div class="container">
     <div>
       <h1 class="title">
-        Arturo
+        Pinco
       </h1>
       <p>{{ document.data.my_text_field[0].text }}</p>
       <img src="~/assets/IMG_20210208_085727.jpg" alt="">
     </div>
     <h1 class="title">
-      Arturito
+      Pallino
     </h1>
   </div>
 </template>
