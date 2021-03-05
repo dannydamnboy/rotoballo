@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
-        So bbell'guagliò
+        Non So bbell'guagliò
       </h1>
       <p>{{ document.data.my_text_field[0].text }}</p>
       <img src="~/assets/IMG_20210208_085727.jpg" alt="">
